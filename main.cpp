@@ -15,5 +15,24 @@ int main() {
 
     dict.stampa();
 
+    if(dict.appartiene("apple")){
+        std::cout << "apple appartiene " << "\n";
+    }else  std::cout << "apple non appartiene " << "\n";
+    
+
+    dict.cancella("apple");
+
+     if(dict.appartiene("apple")){
+        std::cout << "apple appartiene " << "\n";
+    }else  std::cout << "apple non appartiene " << "\n";
+
+    dict.stampa();
+
+    dict.inserisci("koob", "coll");
+    dict.inserisci("arc", "collis");
+
+
+    dict.stampa();
+
     return 0;
 }
